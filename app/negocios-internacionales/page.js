@@ -101,11 +101,11 @@ const TESTIMONIOS = [
 ];
 
 const FAQS = [
-  { q:"¿El título tiene validez oficial?", a:"Sí, tiene la misma validez oficial que los presenciales, avalados por la SEP y con el prestigio UAG." },
-  { q:"¿Necesito ir al campus?", a:"No. Los programas son 100% online. Sin embargo, como estudiante UAG puedes acceder al campus y disfrutar de las instalaciones." },
-  { q:"¿Cómo funciona Canvas?", a:"Campus Digital UAG con clases grabadas y en vivo, foros, recursos descargables y soporte técnico permanente." },
-  { q:"¿Hay becas disponibles?", a:"Sí, existen opciones de beca y financiamiento disponibles también para estudiantes de modalidad en línea." },
-  { q:"¿Puedo estudiar mientras trabajo?", a:"Sí, contamos con programas 100% en línea con horarios flexibles para adaptarse a tu vida profesional." },
+  { q:"¿El título tiene validez oficial?", a:"Sí, tiene la misma validez oficial que los presenciales, avalados por la SEP y con el prestigio UAG de más de 90 años." },
+  { q:"¿Necesito ir al campus?", a:"No. El programa es 100% online. Sin embargo, como estudiante UAG puedes acceder al campus y disfrutar de sus instalaciones cuando lo desees." },
+  { q:"¿Qué es el Coach Académico?", a:"Es un acompañante personalizado asignado durante toda tu carrera. Te ayuda a mantener el ritmo, resolver dudas y alcanzar tus metas académicas y profesionales." },
+  { q:"¿Hay becas disponibles?", a:"Sí, existen opciones de beca y bono disponibles para estudiantes de modalidad en línea. Habla con un asesor para conocer las condiciones según tu perfil." },
+  { q:"¿Puedo estudiar mientras trabajo?", a:"Sí. El modelo es flexible, con clases grabadas disponibles 24/7. El 81.66% de nuestros alumnos trabajan mientras estudian." },
   { q:"¿Cuándo es el próximo inicio?", a:"El próximo inicio es el 7 de septiembre de 2026. Contáctanos para asegurar tu lugar con la beca disponible." },
 ];
 
@@ -143,7 +143,7 @@ export default function IAPage() {
       const { error } = await supabase.from("solicitudes").insert([{
         nombre:formData.nombre, email:formData.email,
         telefono:formData.telefono,
-        programa:"Ingeniería en Inteligencia Artificial",
+        programa:"Licenciatura en Negocios Internacionales",
         fecha:new Date().toISOString()
       }]);
       if(error) throw error;
@@ -375,9 +375,9 @@ export default function IAPage() {
           {/* Métricas de social proof — MEJORA 5 */}
           <div style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:"1rem" }}>
             {[
-              { num:"9/10", label:"egresados consigue empleo en menos de 1 año", color:"#7a2531" },
+              { num:"81%", label:"de alumnos trabajan mientras estudian", color:"#7a2531" },
               { num:"90%", label:"de estudiantes obtiene beca o apoyo financiero", color:"#f59700" },
-              { num:"100%", label:"online — sin horarios rígidos ni clases obligatorias", color:"#f59700" },
+              { num:"100%", label:"online — estudia desde cualquier lugar del mundo", color:"#f59700" },
             ].map((m,i)=>(
               <div key={i} style={{ padding:"1.2rem", background:"#f9f9f9", borderRadius:"10px", border:`2px solid ${m.color}22` }}>
                 <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"1.8rem", fontWeight:900, color:m.color, lineHeight:1, marginBottom:"0.3rem" }}>{m.num}</p>
@@ -388,13 +388,13 @@ export default function IAPage() {
         </div>
 
         <div style={{ paddingTop:"2.5rem", borderTop:"2px solid #f59700" }}>
-          <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"1rem", fontWeight:700, color:"#f59700", marginBottom:"0.3rem" }}>Crea, Innova y Lidera</p>
+          <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"1rem", fontWeight:700, color:"#f59700", marginBottom:"0.3rem" }}>Lidera, Innova y Transforma</p>
           <h2 style={{ fontSize:"clamp(1.4rem,3vw,2rem)", fontWeight:800, color:"#333", marginBottom:"2rem", lineHeight:1.3 }}>
-            Forma parte de la generación que transforma la tecnología en oportunidades reales para la sociedad.
+            Forma parte de la generación que impulsa la expansión empresarial en mercados globales.
           </h2>
 
           <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"1rem", fontWeight:700, color:"#555", fontStyle:"italic", marginBottom:"1.5rem" }}>
-            ¿Por qué estudiar Ingeniería en Inteligencia Artificial Online en la UAG?
+            ¿Por qué estudiar Negocios Internacionales Online en la UAG?
           </p>
 
           <div style={{ display:"flex", flexDirection:"column" }}>
@@ -476,7 +476,7 @@ export default function IAPage() {
       {/* ── POR QUÉ UAG ONLINE ── */}
       <section style={{ padding:"4rem 2rem", background:"#fff" }}>
         <div style={{ maxWidth:"1100px", margin:"0 auto" }}>
-          <h2 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"clamp(1.4rem,3vw,2rem)", fontWeight:800, color:"#333", marginBottom:"0.5rem" }}>Más que una carrera. Una experiencia UAG.</h2>
+          <h2 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"clamp(1.4rem,3vw,2rem)", fontWeight:800, color:"#333", marginBottom:"0.5rem" }}>Más que una licenciatura. Una experiencia UAG global.</h2>
           <div style={{ width:"60px", height:"3px", background:"#f59700", marginBottom:"2.5rem" }} />
           <div className="uag-exp-grid" style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:"1rem" }}>
             {[
@@ -911,7 +911,7 @@ export default function IAPage() {
       <section style={{ padding:"5rem 2rem", background:"#fff", borderTop:"4px solid #f59700", textAlign:"center" }}>
         <div style={{ maxWidth:"700px", margin:"0 auto" }}>
           <h2 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"clamp(1.5rem,4vw,2.4rem)", fontWeight:900, color:"#333", marginBottom:"0.8rem", lineHeight:1.1 }}>
-            ¿Listo para diseñar el futuro con IA?
+            ¿Listo para liderar negocios en el mundo global?
           </h2>
           <p style={{ fontSize:"0.95rem", color:"#777", marginBottom:"2.5rem", lineHeight:1.7 }}>
             Inicio 7 de septiembre de 2026 · Beca + Bono disponibles · Sin examen de admisión
@@ -933,7 +933,7 @@ export default function IAPage() {
       {/* ── STICKY BAR ── */}
       <div className={`sticky-bar ${scrollY>400?"show":""}`}>
         <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.85rem", fontWeight:600, color:"#fff" }}>
-          🎓 Ing. en Inteligencia Artificial Online · <span style={{ color:"#f59700" }}>Beca + Bono disponibles</span>
+          🎓 <strong>Lic. en Negocios Internacionales Online</strong> · <span style={{ color:"#f59700" }}>Beca + Bono disponibles</span>
         </p>
         <a href="#formulario">
           <button className="btn-orange" style={{ whiteSpace:"nowrap", padding:"0.55rem 1.5rem" }}>HABLA CON UN ASESOR</button>
