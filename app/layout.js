@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Ingeniería en Inteligencia Artificial Online | UAG",
-  description: "Licenciatura en Ingeniería en Inteligencia Artificial 100% online. Respaldo de Arizona State University. Inicio septiembre 2026.",
-  keywords: "inteligencia artificial, ingeniería, UAG, online, licenciatura, machine learning",
+  title: "Lic. en Negocios Internacionales Online | UAG",
+  description: "Licenciatura en Negocios Internacionales 100% online. Impulsa tu carrera en el comercio global con respaldo de UAG y Arizona State University. Inicio septiembre 2026.",
+  keywords: "negocios internacionales, licenciatura, UAG, online, comercio exterior, internacionalización",
 };
 
 export default function RootLayout({ children }) {
