@@ -650,13 +650,13 @@ export default function IAPage() {
                 width:"36px", height:"36px", borderRadius:"50%", display:"flex", alignItems:"center",
                 justifyContent:"center", fontSize:"1.4rem", fontWeight:900, lineHeight:1 }}>❝</div>
               <p style={{ fontSize:"0.95rem", color:"#333", lineHeight:1.75, fontStyle:"italic", marginBottom:"1.2rem", marginTop:"0.5rem" }}>
-                "Estudiar en UAG Online me permitió seguir trabajando mientras completaba mi carrera. El Coach Académico fue clave — nunca me sentí solo en el proceso."
+                "Gracias a UAG Online pude desarrollar una visión global de los negocios sin dejar mi trabajo. El programa me abrió puertas en el comercio internacional que no imaginaba."
               </p>
               <div style={{ display:"flex", alignItems:"center", gap:"0.8rem" }}>
                 <div style={{ width:"44px", height:"44px", borderRadius:"50%", background:"#7a2531", display:"flex", alignItems:"center", justifyContent:"center", fontFamily:"'Outfit',sans-serif", fontWeight:800, color:"#fff", fontSize:"1.1rem", flexShrink:0 }}>M</div>
                 <div>
-                  <p style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:"0.88rem", color:"#333" }}>Miguel A. Ramírez</p>
-                  <p style={{ fontSize:"0.76rem", color:"#888" }}>Egresado UAG Online · Ing. en Sistemas</p>
+                  <p style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:"0.88rem", color:"#333" }}>Andrea M. Torres</p>
+                  <p style={{ fontSize:"0.76rem", color:"#888" }}>Egresada UAG Online · Lic. en Negocios Internacionales</p>
                 </div>
                 <div style={{ marginLeft:"auto", textAlign:"right" }}>
                   <p style={{ fontFamily:"'Outfit',sans-serif", fontWeight:900, fontSize:"1.1rem", color:"#f59700" }}>★★★★★</p>
