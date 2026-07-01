@@ -11,13 +11,10 @@ const supabase = createClient(
 const LOGO_URL = "https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/online%20logo%201%20(1).png";
 
 const RAZONES = [
-  { num:"01", titulo:"Negocios Internacionales para la Economía Digital", desc:"Aprende a competir en mercados internacionales altamente digitalizados mediante el uso de analítica de datos, inteligencia artificial y tecnologías emergentes aplicadas a los negocios globales." },
-  { num:"02", titulo:"Formación Integral de la Cadena Global de Negocios", desc:"Integra conocimientos de comercio exterior, logística internacional, finanzas, inteligencia de mercados y cadena de suministro para desarrollar una visión estratégica de los negocios globales." },
-  { num:"03", titulo:"Internacionalización y Crecimiento Empresarial", desc:"Desarrolla las competencias para diseñar estrategias de expansión internacional, apertura de nuevos mercados y posicionamiento global para empresas y organizaciones." },
-  { num:"04", titulo:"Continuidad Internacional con ASU — Maestría Acelerada", desc:"Accede a contenidos internacionales y a rutas de continuidad académica vinculadas con Arizona State University (ASU), la universidad más innovadora del mundo." },
-  { num:"05", titulo:"Coach Académico + Success Center", desc:"No estudias solo. Desde el inicio contarás con seguimiento académico, orientación personalizada y apoyo constante para ayudarte a alcanzar tus metas profesionales." },
-  { num:"06", titulo:"Tecnología diseñada para tu éxito", desc:"Estudia con modalidad 100% online, clases en vivo y grabadas, acceso a Canvas, Microsoft 365, LINC para asesorías personalizadas y herramientas que te permiten avanzar a tu ritmo." },
-  { num:"07", titulo:"Docentes con experiencia profesional", desc:"Desarrolla competencias aplicadas con profesores que combinan experiencia profesional y académica, acercándote a los retos reales del entorno empresarial global." },
+  { num:"01", titulo:"Negocios internacionales para la economía digital", desc:"Aprende a competir en mercados internacionales mediante el uso de analítica de datos, inteligencia artificial y tecnologías emergentes para responder a los desafíos de la economía global actual." },
+  { num:"02", titulo:"Formación integral para liderar negocios globales", desc:"Integra conocimientos de comercio internacional, logística, finanzas, inteligencia de mercados y cadena de suministro para desarrollar una visión estratégica de los negocios internacionales." },
+  { num:"03", titulo:"Expansión internacional con visión estratégica", desc:"Desarrolla las competencias para diseñar estrategias de internacionalización, identificar oportunidades de negocio, negociar en entornos interculturales y liderar el crecimiento de organizaciones en mercados globales." },
+  { num:"04", titulo:"Flexibilidad con acompañamiento real", desc:"Estudia 100% online con clases en vivo y grabadas, organiza tu tiempo y avanza con el acompañamiento de un Coach Académico. Además, tendrás acceso a Canvas, Microsoft 365 y LINC para aprender, colaborar y recibir asesorías personalizadas desde cualquier lugar y a tu propio ritmo." },
 ];
 
 const ICON_IA = () => (
@@ -375,9 +372,9 @@ export default function IAPage() {
           {/* Métricas de social proof — MEJORA 5 */}
           <div style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:"1rem" }}>
             {[
+              { num:"100%", label:"Online: Estudia desde cualquier lugar con clases en vivo y grabadas", color:"#7a2531" },
+              { num:"12", label:"Cuatrimestres: Concluye tu licenciatura en 4 años", color:"#f59700" },
               { num:"81%", label:"de alumnos trabajan mientras estudian", color:"#7a2531" },
-              { num:"90%", label:"de estudiantes obtiene beca o apoyo financiero", color:"#f59700" },
-              { num:"100%", label:"online — estudia desde cualquier lugar del mundo", color:"#f59700" },
             ].map((m,i)=>(
               <div key={i} style={{ padding:"1.2rem", background:"#f9f9f9", borderRadius:"10px", border:`2px solid ${m.color}22` }}>
                 <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"1.8rem", fontWeight:900, color:m.color, lineHeight:1, marginBottom:"0.3rem" }}>{m.num}</p>
