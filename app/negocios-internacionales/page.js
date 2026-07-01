@@ -674,7 +674,7 @@ export default function IAPage() {
           </div>
           <div style={{ width:"50px", height:"3px", background:"#f59700", margin:"0 auto 2.5rem" }} />
           <div className="stats-ia-grid" style={{ display:"grid", gridTemplateColumns:"repeat(6,1fr)", gap:"1rem" }}>
-            {[["90","años de prestigio"],["44","programas online"],["1,777","alumnos activos"],["567","egresados"],["+200","convenios empresariales"],["5★","QS Stars"]].map(([n,l],i)=>(
+            {[["90","años de prestigio"],["42","programas online"],["1,777","alumnos activos"],["567","egresados"],["+200","convenios empresariales"],["5★","QS Stars"]].map(([n,l],i)=>(
               <div key={i} style={{ textAlign:"center", padding:"1.5rem 0.8rem", background:"#fff", borderRadius:"8px", border:"1px solid #eee", boxShadow:"0 2px 8px rgba(0,0,0,0.05)", transition:"transform 0.2s, box-shadow 0.2s" }}
                 onMouseEnter={e=>{ e.currentTarget.style.transform="translateY(-3px)"; e.currentTarget.style.boxShadow="0 6px 20px rgba(122,37,49,0.12)"; e.currentTarget.style.borderColor="#f59700"; }}
                 onMouseLeave={e=>{ e.currentTarget.style.transform="none"; e.currentTarget.style.boxShadow="0 2px 8px rgba(0,0,0,0.05)"; e.currentTarget.style.borderColor="#eee"; }}>
@@ -911,7 +911,7 @@ export default function IAPage() {
             ¿Listo para liderar negocios en el mundo global?
           </h2>
           <p style={{ fontSize:"0.95rem", color:"#777", marginBottom:"2.5rem", lineHeight:1.7 }}>
-            Inicio 7 de septiembre de 2026 · Beca + Bono disponibles · Sin examen de admisión
+            Inicio 7 de septiembre de 2026 · Beca + Bono disponibles
           </p>
           <a href="#formulario">
             <button className="btn-orange" style={{ padding:"1rem 3rem", fontSize:"1rem", letterSpacing:"0.06em" }}>
